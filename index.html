@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memórias Perdidas | Banco de Dados</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-database"></i>
+            </div>
+
+            <div>
+                <h2>Memórias</h2>
+                <span>Perdidas</span>
+            </div>
+        </div>
+
+        <nav>
+            <button class="menu-item active" data-section="inicio">
+                <i class="fa-solid fa-house"></i>
+                Início
+            </button>
+
+            <button class="menu-item" data-section="regioes">
+                <i class="fa-solid fa-map"></i>
+                Regiões
+            </button>
+
+            <button class="menu-item" data-section="dados">
+                <i class="fa-solid fa-table"></i>
+                Banco de Dados
+            </button>
+
+            <button class="menu-item" data-section="categorias">
+                <i class="fa-solid fa-layer-group"></i>
+                Categorias
+            </button>
+
+            <button class="menu-item" data-section="materiais">
+                <i class="fa-solid fa-folder-open"></i>
+                Materiais
+            </button>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>Projeto escolar</p>
+            <span>Comunidade e Território</span>
+        </div>
+
+    </aside>
+
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+
+        <!-- CABEÇALHO -->
+        <header>
+
+            <div>
+                <p class="mini-title">SISTEMA TERRITORIAL</p>
+                <h1>Memórias Perdidas</h1>
+            </div>
+
+            <div class="header-info">
+                <div class="status">
+                    <span></span>
+                    Sistema ativo
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <strong>Equipe</strong>
+                        <small>Projeto escolar</small>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- ================= INÍCIO ================= -->
+
+        <section id="inicio" class="page active">
+
+            <div class="hero">
+
+                <div class="hero-text">
+
+                    <span class="tag">BANCO DE DADOS TERRITORIAL</span>
+
+                    <h2>
+                        Organização dos dados da
+                        <strong>Comunidade Memórias Perdidas</strong>
+                    </h2>
+
+                    <p>
+                        Sistema criado para organizar informações sobre território,
+                        população, recursos, infraestrutura, economia e atividades
+                        desenvolvidas nas diferentes regiões da comunidade.
+                    </p>
+
+                    <button onclick="abrirSecao('regioes')">
+                        Explorar regiões
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+                <div class="hero-symbol">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+
+            </div>
+
+
+            <!-- CARDS -->
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+
+                    <div>
+                        <span>Território</span>
+                        <h3>12 regiões</h3>
+                        <p>Áreas territoriais cadastradas</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+                        <span>População</span>
+                        <h3>50.000</h3>
+                        <p>Habitantes aproximadamente</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div>
+                        <span>Administração</span>
+                        <h3>Conselho</h3>
+                        <p>Conselho da Cidade</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <div>
+                        <span>Território</span>
+                        <h3>Diversificado</h3>
+                        <p>Planícies, montanhas, rios e costa</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        <div>
+                            <span>VISÃO GERAL</span>
+                            <h3>Sobre a comunidade</h3>
+                        </div>
+
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+
+                    <p>
+                        Memórias Perdidas é uma comunidade formada após um fenômeno
+                        que fez parte da população perder fragmentos de suas memórias.
+                        A sociedade passou a reconstruir sua organização utilizando
+                        conhecimentos preservados, registros encontrados e a troca
+                        de informações entre os moradores.
+                    </p>
+
+                    <p>
+                        O território é dividido em 12 regiões com diferentes funções,
+                        recursos naturais, atividades econômicas e estruturas.
+                    </p>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        <div>
+                            <span>ESTRUTURA</span>
+                            <h3>Dados organizados</h3>
+                        </div>
+
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+
+                    <div class="database-list">
+
+                        <div>
+                            <i class="fa-solid fa-mountain"></i>
+                            <span>Território e relevo</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-seedling"></i>
+                            <span>Recursos naturais</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-industry"></i>
+                            <span>Produção e indústria</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-road"></i>
+                            <span>Transporte e rotas</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                            <span>Habitação</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= REGIÕES ================= -->
+
+        <section id="regioes" class="page">
+
+            <div class="page-heading">
+                <div>
+                    <span>TERRITÓRIO</span>
+                    <h2>Regiões da comunidade</h2>
+
+                    <p>
+                        Consulte as informações registradas para cada região.
+                    </p>
+                </div>
+
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        id="pesquisaRegiao"
+                        type="text"
+                        placeholder="Pesquisar região..."
+                    >
+                </div>
+            </div>
+
+
+            <div id="regionGrid" class="region-grid"></div>
+
+        </section>
+
+
+        <!-- ================= BANCO ================= -->
+
+        <section id="dados" class="page">
+
+            <div class="page-heading">
+                <div>
+                    <span>REGISTROS</span>
+                    <h2>Banco de Dados</h2>
+
+                    <p>
+                        Visualização geral das informações territoriais.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="filter-area">
+
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        id="pesquisaTabela"
+                        type="text"
+                        placeholder="Pesquisar nos registros..."
+                    >
+                </div>
+
+                <select id="filtroTipo">
+                    <option value="todos">Todas as regiões</option>
+                    <option value="costeira">Costeiras</option>
+                    <option value="planicie">Planícies</option>
+                    <option value="montanha">Montanhas</option>
+                    <option value="hidrica">Hídricas</option>
+                    <option value="florestal">Florestais</option>
+                </select>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Região</th>
+                            <th>Tipo</th>
+                            <th>Recurso principal</th>
+                            <th>Atividade</th>
+                            <th>Transporte</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="databaseTable"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIAS ================= -->
+
+        <section id="categorias" class="page">
+
+            <div class="page-heading">
+                <div>
+                    <span>ORGANIZAÇÃO</span>
+                    <h2>Categorias de dados</h2>
+
+                    <p>
+                        Categorias utilizadas para organizar as informações
+                        da comunidade.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="category-grid">
+
+                <div class="category-card">
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3>População</h3>
+
+                    <p>
+                        Organização dos aproximadamente 50 mil habitantes
+                        por grupos e atividades.
+                    </p>
+                </div>
+
+
+                <div class="category-card">
+                    <i class="fa-solid fa-map-location-dot"></i>
+
+                    <h3>Território</h3>
+
+                    <p>
+                        Regiões, relevo, vegetação, recursos naturais e
+                        características geográficas.
+                    </p>
+                </div>
+
+
+                <div class="category-card">
+                    <i class="fa-solid fa-wheat-awn"></i>
+
+                    <h3>Produção</h3>
+
+                    <p>
+                        Agricultura, pesca, mineração, indústria e outras
+                        atividades econômicas.
+                    </p>
+                </div>
+
+
+                <div class="category-card">
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <h3>Energia</h3>
+
+                    <p>
+                        Estruturas de geração e distribuição de energia
+                        utilizadas no território.
+                    </p>
+                </div>
+
+
+                <div class="category-card">
+                    <i class="fa-solid fa-road"></i>
+
+                    <h3>Transporte</h3>
+
+                    <p>
+                        Rodovias, ferrovias, portos e conexões entre as
+                        diferentes regiões.
+                    </p>
+                </div>
+
+
+                <div class="category-card">
+                    <i class="fa-solid fa-building"></i>
+
+                    <h3>Infraestrutura</h3>
+
+                    <p>
+                        Construções e serviços necessários para o
+                        funcionamento da comunidade.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-panel">
+
+                <div class="why-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div>
+                    <h3>Por que essas categorias foram escolhidas?</h3>
+
+                    <p>
+                        As categorias foram escolhidas porque representam os
+                        principais elementos utilizados para o funcionamento
+                        de Memórias Perdidas. Elas permitem relacionar a população
+                        com o território, os recursos disponíveis, a produção,
+                        os meios de transporte e as estruturas existentes.
+                    </p>
+
+                    <p>
+                        A organização também facilita uma futura transformação
+                        dessas informações em tabelas de um banco de dados
+                        relacional.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MATERIAIS ================= -->
+
+        <section id="materiais" class="page">
+
+            <div class="page-heading">
+                <div>
+                    <span>ARQUIVOS</span>
+                    <h2>Materiais do projeto</h2>
+
+                    <p>
+                        Documentos e arquivos utilizados na construção
+                        da comunidade.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="files-grid">
+
+                <a
+                    href="https://drive.google.com/drive/u/1/folders/1XRfU-a8o4RZaF0cuRrGHFdhvvsy61Cm7"
+                    target="_blank"
+                    class="file-card"
+                >
+
+                    <div class="file-icon">
+                        <i class="fa-brands fa-google-drive"></i>
+                    </div>
+
+                    <div>
+                        <span>GOOGLE DRIVE</span>
+                        <h3>Pasta geral</h3>
+                        <p>Arquivos gerais do projeto.</p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                </a>
+
+
+                <a
+                    href="https://drive.google.com/drive/u/1/folders/1Ou_e5C7h4r2xA1_4QpDtP-cb4ttfSjb2"
+                    target="_blank"
+                    class="file-card"
+                >
+
+                    <div class="file-icon">
+                        <i class="fa-solid fa-images"></i>
+                    </div>
+
+                    <div>
+                        <span>IMAGENS</span>
+                        <h3>Mapas das regiões</h3>
+                        <p>Imagens e representações territoriais.</p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                </a>
+
+
+                <a
+                    href="https://docs.google.com/spreadsheets/d/1Gz1_44KUVg-l9kWfV0dg6FuVti6HSouU/edit?gid=1924291967#gid=1924291967"
+                    target="_blank"
+                    class="file-card"
+                >
+
+                    <div class="file-icon">
+                        <i class="fa-solid fa-table"></i>
+                    </div>
+
+                    <div>
+                        <span>PLANILHA</span>
+                        <h3>Banco de dados original</h3>
+                        <p>Planilha utilizada como base para o sistema.</p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                </a>
+
+
+                <a
+                    href="https://docs.google.com/document/d/1J1nzcjDFaRrdvZXINUjly9BWUwuImBy7XV7JvKCwZqI/edit"
+                    target="_blank"
+                    class="file-card"
+                >
+
+                    <div class="file-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+
+                    <div>
+                        <span>DOCUMENTO</span>
+                        <h3>Relatório geral</h3>
+                        <p>Relatório da construção da comunidade.</p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL DA REGIÃO -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-box">
+
+            <button class="close-modal" onclick="fecharModal()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div id="modalContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
